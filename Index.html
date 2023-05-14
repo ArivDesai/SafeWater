@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Safe Water</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+      }
+      
+      .header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      .menu {
+        overflow: hidden;
+        background-color: #333;
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .menu a {
+        color: white;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+        font-size: 17px;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      
+      .menu a:hover {
+        background-color: #4CAF50;
+      }
+      
+      .menu .icon {
+        display: none;
+      }
+      
+      @media screen and (max-width: 600px) {
+        .menu a:not(:first-child) {
+          display: none;
+        }
+        .menu a.icon {
+          float: right;
+          display: block;
+        }
+      }
+      
+      .content {
+        background-image: url('https://cdn.pixabay.com/photo/2018/02/08/22/27/water-3132229_1280.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 20px;
+        margin-top: 20px;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+        border-radius: 5px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      
+      .image {
+        text-align: center;
+        margin-top: 50px;
+      }
+      
+      .image img {
+        max-width: 500px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Safe Water</h1>
+      <p>Click any of the three locations below to view the contaminants in each area</p>
+    </div>
+    <div class="menu" id="myMenu">
+      <a href="https://dublinhigh.maps.arcgis.com/apps/mapviewer/index.html?webmap=2a5cd621c9bf466cb56f40d18f174f78">North Coast</a>
+      <a href="https://dublinhigh.maps.arcgis.com/apps/mapviewer/index.html?webmap=54a887843ebc47bb9a583353d110ac20">Central Valley</a>
+      <a href="https://dublinhigh.maps.arcgis.com/apps/mapviewer/index.html?webmap=b204ca70552540699a4b7792c868a20a">Colorado River Basin</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="content">
+      <h2>Why Safe Water is Important</h2>
+      <p>It's important to make sure your water is free from contamination because contaminated water can contain harmful pathogens, chemicals, and other pollutants that can cause serious health problems. Drinking contaminated water can lead to gastrointestinal illnesses, skin and lung infections, and other health issues. In some cases, exposure to contaminated water can even be fatal.</p>
